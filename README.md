@@ -1,4 +1,4 @@
-# FixMyData: AI-Powered Data Quality Assistant
+# Data Guard: AI-Powered Data Data Auditor
 
 ## Project Description
 
