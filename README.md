@@ -1,4 +1,4 @@
-# Data Guard: AI-Powered Data Data Auditor
+#AI-Assisted Data Integrity Validation Pipeline for Large-Scale Datasets
 
 ## Project Description
 
