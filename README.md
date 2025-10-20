@@ -2,7 +2,7 @@
 
 ## Project Description
 
-FixMyData is a data quality assistant that helps identify and suggest fixes for issues in datasets using AI (specifically, a local Ollama instance). The project demonstrates a modular architecture with a Python backend (FastAPI) for data processing and AI interaction, and includes examples of two different frontends: a simple HTML/JavaScript frontend and a Streamlit application.
+AI-Assisted Data Integrity Validation Pipeline for Large-Scale Datasets is a data quality assistant that helps identify and suggest fixes for issues in datasets using AI (specifically, a local Ollama instance). The project demonstrates a modular architecture with a Python backend (FastAPI) for data processing and AI interaction, and includes examples of two different frontends: a simple HTML/JavaScript frontend and a Streamlit application.
 
 This project is a great example for a portfolio, showcasing skills in data handling, API development, AI integration (local LLMs), and different frontend approaches.
 
