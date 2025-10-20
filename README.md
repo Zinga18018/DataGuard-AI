@@ -1,4 +1,4 @@
-#AI-Assisted Data Integrity Validation Pipeline for Large-Scale Datasets
+# AI-Assisted Data Integrity Validation Pipeline for Large-Scale Datasets
 
 ## Project Description
 
