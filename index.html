@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data Quality Profiler and Repair Assistant</title>
+  <style>
+    :root { --ink:#1d2733; --muted:#637083; --line:#d8dee7; --soft:#f7f9fc; --accent:#0f766e; }
+    * { box-sizing:border-box; }
+    body { margin:0; font:16px/1.45 system-ui,-apple-system,Segoe UI,sans-serif; color:var(--ink); background:white; }
+    main { max-width:980px; margin:auto; padding:42px 22px 56px; }
+    header { border-bottom:1px solid var(--line); padding-bottom:22px; margin-bottom:26px; }
+    h1 { margin:0 0 8px; font-size:clamp(30px,5vw,44px); line-height:1.05; }
+    h2 { font-size:18px; margin:28px 0 12px; }
+    p { color:var(--muted); max-width:780px; margin:0 0 12px; }
+    a { color:var(--accent); text-decoration:none; font-weight:700; }
+    .button { display:inline-block; border:1px solid var(--line); border-radius:6px; padding:8px 12px; background:var(--soft); color:var(--ink); margin-top:16px; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin:20px 0; }
+    .card, table { border:1px solid var(--line); border-radius:8px; background:white; }
+    .card { padding:14px; }
+    .card strong { display:block; font-size:24px; }
+    .card span { color:var(--muted); font-size:13px; }
+    table { width:100%; border-collapse:collapse; overflow:hidden; }
+    th,td { text-align:left; padding:11px 12px; border-bottom:1px solid var(--line); }
+    th { background:var(--soft); }
+    tr:last-child td { border-bottom:0; }
+    @media (max-width:760px){ .grid{grid-template-columns:1fr;} }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Data Quality Profiler and Repair Assistant</h1>
+    <p>FastAPI and Streamlit project for profiling CSV/XLSX files, reviewing data issues, and applying code-based fixes.</p>
+    <a class="button" href="https://github.com/Zinga18018/DataGuard-AI">GitHub Repository</a>
+  </header>
+  <section class="grid">
+    <div class="card"><strong>264,351</strong><span>observations profiled</span></div>
+    <div class="card"><strong>169,362</strong><span>missing cells surfaced</span></div>
+    <div class="card"><strong>5</strong><span>API workflow routes</span></div>
+  </section>
+  <h2>Issue review sample</h2>
+  <table>
+    <thead><tr><th>Check</th><th>What the app surfaces</th><th>Why it matters</th></tr></thead>
+    <tbody>
+      <tr><td>Missing values</td><td>Null counts and affected columns</td><td>Prevents silent model or report errors</td></tr>
+      <tr><td>Outliers</td><td>IQR-based numeric anomalies</td><td>Helps review suspicious records before modeling</td></tr>
+      <tr><td>Type mismatches</td><td>Mixed or unexpected column types</td><td>Keeps downstream SQL/ML pipelines stable</td></tr>
+    </tbody>
+  </table>
+  <h2>Workflow</h2>
+  <p>Upload data, generate a profile, review issues, request local Ollama-assisted recommendations, apply code-based fixes, and compare before/after summaries.</p>
+</main>
+</body>
+</html>
+
